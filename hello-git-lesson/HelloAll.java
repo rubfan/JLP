@@ -3,6 +3,7 @@ public class HelloAll {
     	System.out.println("Hello all!!!");
 	//================================
 	printUserInfo("Ruslan", "Gramatic");
+     printUserInfo("Anna", "Tsurkan");
     }
 
     private static void printUserInfo(String firstName, String lastName) {
