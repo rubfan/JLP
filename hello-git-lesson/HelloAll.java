@@ -2,7 +2,8 @@ public class HelloAll {
     public static void main(String[] args) {
     	System.out.println("Hello all!!!");
 	//================================
-	printUserInfo("Irina", "Shvec");
+	printUserInfo("Ruslan", "Gramatic");
+	printUserInfo("Irina", "Shvec")
     }
 
     private static void printUserInfo(String firstName, String lastName) {
