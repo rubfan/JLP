@@ -13,9 +13,9 @@ ublic class HelloAll {
 	printUserInfo("Denis","Palamarchuk")
     
 
-=======
+
   	printUserInfo("Vladislav","Berdnikov");
->>>>>>> 3cf8cfc6300cfd4c92e1602527e57adccb4c402b
+
 
      }
     private static void printUserInfo(String firstName, String lastName) {
