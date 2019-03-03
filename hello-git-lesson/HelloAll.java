@@ -10,6 +10,7 @@ public class HelloAll {
   printUserInfo("Iliya ","Chernomorets");
 	printUserInfo("Vitalij", "Stinskij");
         printUserInfo("Iliya ","Chernomorets");
+	printUserInfo("Denis","Palamarchuk")
     }
 
 
@@ -17,4 +18,3 @@ public class HelloAll {
 	System.out.format("Hello %s %s, Welcome to Hillel school !!!\n", firstName, lastName);
     }
 }
-
