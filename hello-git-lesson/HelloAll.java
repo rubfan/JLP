@@ -1,4 +1,4 @@
-ublic class HelloAll {
+public class HelloAll {
      public static void main (String[] args){
         System.out.println("Hello all!!!);
 	//================================
@@ -9,13 +9,8 @@ ublic class HelloAll {
   	printUserInfo("Iliya ","Chernomorets");
 	printUserInfo("Vitalij", "Stinskij");
         printUserInfo("Iliya ","Chernomorets");
-
-	printUserInfo("Denis","Palamarchuk")
-    
-
-
   	printUserInfo("Vladislav","Berdnikov");
-
+        printUserInfo("Denis","Palamarchuk");
 
      }
     private static void printUserInfo(String firstName, String lastName) {
