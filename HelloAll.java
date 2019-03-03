@@ -4,6 +4,7 @@ public class HelloAll {
 	//================================
 	printUserInfo("Vladyslav", "Kasyanchuk");
 	printUserInfo("Ruslan", "Gramatic");
+        printUserInfo("Kirill", "Klyenko");
 	printUserInfo("Rotar", "Denis");
 	printUserInfo("Nikita", "Palchinski");
   printUserInfo("Iliya ","Chernomorets");
