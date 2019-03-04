@@ -11,6 +11,7 @@ public class HelloAll {
 	printUserInfo("Vitalij", "Stinskij");
         printUserInfo("Iliya ","Chernomorets");
   	printUserInfo("Vladislav","Berdnikov");
+        printUserInfo("Denis","Palamarchuk");
 
      }
     private static void printUserInfo(String firstName, String lastName) {
