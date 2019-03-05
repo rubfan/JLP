@@ -7,12 +7,15 @@ public class HelloAll {
 	printUserInfo("Irina", "Shvec");
 	printUserInfo("Rotar", "Denis");
         printUserInfo("Iliya ","Chernomorets");
+	printUserInfo("Maxim", "Voroniuk");
 	printUserInfo("Kirill" ,"Klyenko");
 	printUserInfo("Rotar", "Denis");
+        printUserInfo("Nikita", "Palchinski");
   	printUserInfo("Iliya ","Chernomorets");
 	printUserInfo("Vitalij", "Stinskij");
         printUserInfo("Iliya ","Chernomorets");
   	printUserInfo("Vladislav","Berdnikov");
+        printUserInfo("Denis","Palamarchuk");
 
      }
     private static void printUserInfo(String firstName, String lastName) {
