@@ -2,13 +2,28 @@ import java.util.Scanner;
 
 public class HomeWork {
 	public static void main (String[] args) {
-		Task_1 ();
-		Task_2 ();
-		Task_3 ();
-		Task_4 ();
-		Task_5 ();
-		Task_6 ();
-		Task_7 ();
+		int NumTask;
+		Scanner in = new Scanner (System.in);
+		System.out.println("Enter the number of Task from 1 to 7:");
+			NumTask = in.nextInt();
+		switch (NumTask) {
+			case 1:	Task_1 ();
+				break;
+			case 2:	Task_2 ();
+				break;
+			case 3:	Task_3 ();
+				break;
+			case 4:	Task_4 ();
+				break;
+			case 5:	Task_5 ();
+				break;
+			case 6:	Task_6 ();
+				break;
+			case 7:	Task_7 ();
+				break;
+			default: System.out.println("From 1 to 7");
+				break;
+		}
 	}
 	private static void Task_1 () {
 		int num1, num2, num3;
