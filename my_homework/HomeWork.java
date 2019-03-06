@@ -169,45 +169,12 @@ public class HomeWork {
 			num1 = in.nextInt();
 		System.out.print("Enter the second number: ");
 			num2 = in.nextInt();
-		if (num1 == num2) {
+		if (Math.abs(num1 - 10) == Math.abs(num2 - 10))
 			System.out.println("And how do I answer that ?");
-		}
-		else if ((num1 - 10) >= 0) {
-			if ((num2 - 10) >= 0) {
-				if ((num1 - 10) < (num2 - 10))
-					System.out.println("Number closer to ten is " + num1);
-				else if ((num1 - 10) > (num2 - 10))
-					System.out.println("Number closer to ten is " + num2);
-				else if ((num1 - 10) == (num2 - 10))
-					System.out.println("Equal distance");
-			}
-			else if ((10 - num2) >= 0) {
-				if ((num1 - 10) < (10 - num2))
-					System.out.println("Number closer to ten is " + num1);
-				else if ((num1 - 10) > (10 - num2))
-					System.out.println("Number closer to ten is " + num2);
-				else if ((num1 - 10 ) == (10 - num2))
-					System.out.println("Equal distance");
-			}
-		}
-		else if ((10 - num1) >= 0) {
-			if ((num2 - 10) >= 0) {
-				if ((10 - num1) < (num2 - 10))
-					System.out.println("Number closer to ten is " + num1);
-				else if ((10 - num1) > (num2 - 10))
-					System.out.println("Number closer to ten is " + num2);
-				else if ((10 - num1) == (num2 - 10))
-					System.out.println("Equal distance");
-			}
-			else if ((10 - num2) >= 0) {
-				if ((10 - num1) < (10 - num2))
-					System.out.println("Number closer to ten is " + num1);
-				else if ((10 - num1) > (10 - num2))
-					System.out.println("Number closer to ten is " + num2);
-				else if ((10 - num1) == (10 - num2))
-					System.out.println("Equal distance");
-			}
-		}
+		else if (Math.abs(num1 - 10) < Math.abs(num2 - 10))
+			System.out.println("10 closer: " + num1);
+		else if (Math.abs(num1 -10) > Math.abs(num2 - 10))
+			System.out.println("10 closer: " + num2);
 	}
 	private static void Task_7 () {
 		int NumOfDay, cost;
