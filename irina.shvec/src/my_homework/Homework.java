@@ -44,6 +44,7 @@ public class Homework {
     }
     public static void isEvenNum(){
         System.out.println("Please, enter the digit to determine evenness or unevenness");
+
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         int result = (num % 2);
