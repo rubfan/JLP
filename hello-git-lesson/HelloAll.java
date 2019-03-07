@@ -5,6 +5,7 @@ public class HelloAll {
 
 	printUserInfo("Vladyslav", "Kasyanchuk");
 	printUserInfo("Ruslan", "Gramatic");
+	printUserInfo("Maxim", "Voroniuk");
 	printUserInfo("Kirill" ,"Klyenko");
 	printUserInfo("Rotar", "Denis");
   printUserInfo("Iliya ","Chernomorets");
@@ -12,7 +13,15 @@ public class HelloAll {
   printUserInfo("Iliya ","Chernomorets");
   printUserInfo("Ivan", "Brus");
   printUserInfo("Vladislav","Berdnikov");
-  }
+        printUserInfo("Nikita", "Palchinski");
+  	printUserInfo("Iliya ","Chernomorets");
+	printUserInfo("Vitalij", "Stinskij");
+        printUserInfo("Iliya ","Chernomorets");
+  	printUserInfo("Vladislav","Berdnikov");
+        printUserInfo("Denis","Palamarchuk");
+
+     }
+                           
     private static void printUserInfo(String firstName, String lastName) {
 	System.out.format("Hello %s %s, Welcome to Hillel school !!!\n", firstName, lastName);
     }
