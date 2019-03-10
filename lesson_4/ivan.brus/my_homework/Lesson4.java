@@ -1,34 +1,52 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+import static java.lang.Integer.parseInt;
 
 public class Lesson4 {
-    public static void main(String[] args) {
+
+    static int a;
+    static int b;
+    static int c;
+
+    public static void main(String[] args) throws Exception{
 
         Lesson4 ls = new Lesson4();
 
-        Scanner scn = new Scanner(System.in);
-
-        /* проверяем содержит ли строка символы, если да - вызываем метод для подсчета стоимости аренды. чтобы вызвать
+        /* проверяем содержит ли строка слово "days", если да - вызываем метод для подсчета стоимости аренды. чтобы вызвать
         его сканер должен получить что-то типа "6 days". парсим строку и вытаскиваем из неё int для передачи методу
-        apartmentsRent. Если System.in не попадают буквы - проверяем сколько было введено значений чтобы передать их
+        apartmentsRent. Если ввод не содержит слово "days" - проверяем сколько было введено значений чтобы передать их
         методу unEven с одним аргументом для проверки на четность, unEven с двумя аргументами для проверки на
         делимость и близость к 10 или valueMinMax с тремя аргументами.
          */
 
-        if(scn.nextLine().contains("[a-zA-Z]+")){
-            int rentDays = Integer.parseInt(scn.nextLine().replaceAll("\\w",""));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str1 = br.readLine();
+        if(str1.contains("days")){
+            int rentDays = parseInt(str1.replaceAll(" days" , ""));
             ls.apartmentsRent(rentDays);
-        }else {
-            Integer a = scn.nextInt();
-            Integer b = scn.nextInt();
-            Integer c = scn.nextInt();
+            return;
+        }else{
+             a = parseInt(str1);
+        }
 
-            if(c.equals(null)){
-                ls.unEven(a,b);
-            }else if(b.equals(null)){
-                ls.unEven(a);
-            }else{
-                ls.valueMinMax(a,b,c);
-            }
+        // тут вы наверное зададитесь вопросом:"чувак! зачем ты считываешь string ведь вторым вводом у тебя точно должен быть int!"
+        // но если инициализировать переменную как Integer и проверить пустой ввод на null - метод в блоке if не вызывается...
+        // хз почему.
+
+        String str2 = br.readLine();
+        if (str2.equals("")) {
+            ls.unEven(a);
+        }else{
+             b = parseInt(str2);
+        }
+
+        String str3 = br.readLine();
+        if (str3.equals("")){
+            ls.unEven(a,b);
+        }else{
+            c = parseInt(str3);
+            ls.valueMinMax(a,b,c);
         }
 
     }
