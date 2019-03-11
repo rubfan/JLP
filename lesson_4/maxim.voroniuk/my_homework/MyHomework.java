@@ -82,7 +82,7 @@ public class MyHomework {
         return max;
     }
 
-    // возвращает массив строку с содержимым массива
+    // возвращает строку с содержимым массива
     private static String strVars(int varArr[]){
         String s="";
         for (int i:varArr){
