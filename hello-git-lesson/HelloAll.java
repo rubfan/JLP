@@ -3,6 +3,7 @@ public class HelloAll {
         System.out.println("Hello all!!!);
 	//================================
 	printUserInfo("Vladyslav", "Kasyanchuk");
+	printUserInfo("Ruslan", "Gramatic");    }
 	printUserInfo("Ruslan", "Gramatic");
 	printUserInfo("Irina", "Shvec");
 	printUserInfo("Rotar", "Denis");
@@ -15,6 +16,7 @@ public class HelloAll {
 	printUserInfo("Vitalij", "Stinskij");
         printUserInfo("Iliya ","Chernomorets");
   	printUserInfo("Vladislav","Berdnikov");
+      printUserInfo("Anna","Tsurkan");
         printUserInfo("Denis","Palamarchuk");
 	printUserInfo("Aleksey", "Andreev");
 
