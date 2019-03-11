@@ -58,11 +58,11 @@ public class Main {
 
             case "m":
                 Scanner man = new Scanner(System.in);
-                System.out.println("Enter operation:(+, -, *, /, %, | |) ");
+                System.out.println("Enter operation:(+, -, *, /, %, abs) ");
                 String operation = man.nextLine();
                 System.out.println("Enter first operand: ");
                 int firstOperand = man.nextInt();
-                if(!(operation.equals("| |"))) {
+                if(!(operation.equals("abs"))) {
                     System.out.println("Enter second operand: ");
                     int secondOperand = man.nextInt();
 
