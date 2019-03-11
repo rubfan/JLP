@@ -6,30 +6,33 @@ public class Main {
         String operation = args[0];
 
         String firstOperand = args[1];
-        String secondOperand = args[2];
+        if(!(operation.equals("abs"))) {
+            System.out.println("Enter second operand: ");
+            String secondOperand = args[2];
 
-        switch (operation) {
-            case "+":
-                System.out.println(firstOperand + " + " + secondOperand + " = " + (Integer.parseInt(firstOperand) + Integer.parseInt(secondOperand)));
-                break;
-            case "-":
-                System.out.println(firstOperand + " - " + secondOperand + " = " + (Integer.parseInt(firstOperand) - Integer.parseInt(secondOperand)));
-                break;
-            case "*":
-                System.out.println(firstOperand + " * " + secondOperand + " = " + (Integer.parseInt(firstOperand) * Integer.parseInt(secondOperand)));
-                break;
-            case "/":
-                System.out.println(firstOperand + " / " + secondOperand + " = " + ((float)Integer.parseInt(firstOperand) / Integer.parseInt(secondOperand)));
-                break;
-            case "%":
-                System.out.println(firstOperand + " % " + secondOperand + " = " + (Integer.parseInt(firstOperand) % Integer.parseInt(secondOperand)));
-                break;
-            case "| |":
-                System.out.println("|" + firstOperand + "|" + " = " + Math.abs(Integer.parseInt(firstOperand)));
-                break;
-            default:
-                System.out.println("Unable operation. Try again.");
-                break;
+            switch (operation) {
+                case "+":
+                    System.out.println(firstOperand + " + " + secondOperand + " = " + (Integer.parseInt(firstOperand) + Integer.parseInt(secondOperand)));
+                    break;
+                case "-":
+                    System.out.println(firstOperand + " - " + secondOperand + " = " + (Integer.parseInt(firstOperand) - Integer.parseInt(secondOperand)));
+                    break;
+                case "*":
+                    System.out.println(firstOperand + " * " + secondOperand + " = " + (Integer.parseInt(firstOperand) * Integer.parseInt(secondOperand)));
+                    break;
+                case "/":
+                    System.out.println(firstOperand + " / " + secondOperand + " = " + ((float)Integer.parseInt(firstOperand) / Integer.parseInt(secondOperand)));
+                    break;
+                case "%":
+                    System.out.println(firstOperand + " % " + secondOperand + " = " + (Integer.parseInt(firstOperand) % Integer.parseInt(secondOperand)));
+                    break;
+                default:
+                    System.out.println("Unable operation. Try again.");
+                    break;
+            }
         }
+        else
+            System.out.println("|" + firstOperand + "|" + " = " + Math.abs(Integer.parseInt(firstOperand)));
+
     }
 }
