@@ -5,13 +5,10 @@ public class Tips {
 
         Scanner sn = new Scanner(System.in);
 
-
         System.out.println("Enter price: ");
         double price = sn.nextDouble();
-
         System.out.println("Enter service level(terrible, poor, good, great, excellent): ");
         String serviceLvl = sn.next();
-
 
         if (serviceLvl.equals("terrible") ) {
             double tip = price * 0;
