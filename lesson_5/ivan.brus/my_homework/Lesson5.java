@@ -4,14 +4,6 @@ public class Lesson5 {
 
     public static void main(String[] args) {
 
-//        Scanner scn = new Scanner(System.in);
-//        System.out.println("введите операцию");
-//        String operand = scn.nextLine();
-//        System.out.println("введите первое число");
-//        int a = scn.nextInt();
-//        System.out.println("введите второе число");
-//        int b = scn.nextInt();
-
         System.out.println("введите операцию");
     String operand = args[0];
     int a = parseInt(args[1]);
