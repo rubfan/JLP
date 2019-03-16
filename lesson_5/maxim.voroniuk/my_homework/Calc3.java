@@ -16,9 +16,8 @@ public class Calc3 {
             return;
         }
         String operation = args[0];
-
         if (operation.equals("abs")){
-            int operand=Integer.parseInt(args[1]);
+            int operand = Integer.parseInt(args[1]);
             System.out.println("ABS("+operand+")="+Math.abs(operand));
         }
         else {
@@ -26,24 +25,24 @@ public class Calc3 {
             double secondOp;
             double res;
 
-            firstOp=Double.parseDouble(args[1]);
-            secondOp=Double.parseDouble(args[2]);
+            firstOp = Double.parseDouble(args[1]);
+            secondOp = Double.parseDouble(args[2]);
 
             switch (operation) {
                 case "a":
-                    res=firstOp+secondOp;
+                    res = firstOp + secondOp;
                     System.out.printf("%.1f + %.1f = %.1f\n",firstOp,secondOp,res);
                     break;
                 case "s":
-                    res=firstOp-secondOp;
+                    res = firstOp - secondOp;
                     System.out.printf("%.1f - %.1f = %.1f\n",firstOp,secondOp,res);
                     break;
                 case "d":
-                    res=firstOp/secondOp;
+                    res = firstOp / secondOp;
                     System.out.printf("%.2f / %.2f = %.2f\n",firstOp,secondOp,res);
                     break;
                 case "m":
-                    res=firstOp*secondOp;
+                    res = firstOp * secondOp;
                     System.out.printf("%.1f * %.1f = %.1f\n",firstOp,secondOp,res);
                     break;
                 case "%":
@@ -55,6 +54,7 @@ public class Calc3 {
             }
 
         }
+
 
     }
 }

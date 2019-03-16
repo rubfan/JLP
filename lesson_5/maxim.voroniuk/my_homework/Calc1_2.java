@@ -26,7 +26,7 @@ public class Calc1_2 {
 
         if (operation.equals("abs")){
             System.out.println("Input number:");
-            int operand=sc.nextInt();
+            int operand = sc.nextInt();
             System.out.println("ABS("+operand+")="+Math.abs(operand));
         }
         else {
@@ -36,7 +36,7 @@ public class Calc1_2 {
 
             System.out.println("Input first operand:");
             if (sc.hasNextDouble()) {
-                firstOp=sc.nextDouble();
+                firstOp = sc.nextDouble();
             }
             else {
                 System.out.println("format not supported");
@@ -45,7 +45,7 @@ public class Calc1_2 {
 
             System.out.println("Input second operand:");
             if (sc.hasNextDouble()) {
-                secondOp=sc.nextDouble();
+                secondOp = sc.nextDouble();
             }
             else {
                 System.out.println("format not supported");
@@ -54,19 +54,19 @@ public class Calc1_2 {
 
             switch (operation) {
                 case "a":
-                    res=firstOp+secondOp;
+                    res = firstOp+secondOp;
                     System.out.printf("%.1f + %.1f = %.1f\n",firstOp,secondOp,res);
                     break;
                 case "s":
-                    res=firstOp-secondOp;
+                    res = firstOp-secondOp;
                     System.out.printf("%.1f - %.1f = %.1f\n",firstOp,secondOp,res);
                     break;
                 case "d":
-                    res=firstOp/secondOp;
+                    res = firstOp/secondOp;
                     System.out.printf("%.2f / %.2f = %.2f\n",firstOp,secondOp,res);
                     break;
                 case "m":
-                    res=firstOp*secondOp;
+                    res = firstOp*secondOp;
                     System.out.printf("%.1f * %.1f = %.1f\n",firstOp,secondOp,res);
                     break;
                 case "%":

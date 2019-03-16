@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Tips {
     public static void main(String[] args) {
 
-        Scanner sc =new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
 
 
@@ -24,25 +24,25 @@ public class Tips {
         System.out.println("Input the level of service(terrible/poor/good/great/excellent):");
         String serviceLevel=sc.next();
 
-        double tipsP=1;
+        double tipsP = 1;
         switch (serviceLevel){
             case "terrible":
-                tipsP=1;
+                tipsP = 1;
                 break;
             case "poor":
-                tipsP=1.05;
+                tipsP = 1.05;
                 break;
             case "good":
-                tipsP=1.10;
+                tipsP = 1.10;
                 break;
             case "great":
-                tipsP=1.15;
+                tipsP = 1.15;
                 break;
             case "excellent":
-                tipsP=1.20;
+                tipsP = 1.20;
                 break;
             default:
-                tipsP=0;
+                tipsP = 0;
                 System.out.println("I don't understand you");
         }
 
