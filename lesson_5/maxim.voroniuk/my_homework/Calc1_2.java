@@ -54,19 +54,19 @@ public class Calc1_2 {
 
             switch (operation) {
                 case "a":
-                    res = firstOp+secondOp;
+                    res = firstOp + secondOp;
                     System.out.printf("%.1f + %.1f = %.1f\n",firstOp,secondOp,res);
                     break;
                 case "s":
-                    res = firstOp-secondOp;
+                    res = firstOp - secondOp;
                     System.out.printf("%.1f - %.1f = %.1f\n",firstOp,secondOp,res);
                     break;
                 case "d":
-                    res = firstOp/secondOp;
+                    res = firstOp / secondOp;
                     System.out.printf("%.2f / %.2f = %.2f\n",firstOp,secondOp,res);
                     break;
                 case "m":
-                    res = firstOp*secondOp;
+                    res = firstOp * secondOp;
                     System.out.printf("%.1f * %.1f = %.1f\n",firstOp,secondOp,res);
                     break;
                 case "%":
