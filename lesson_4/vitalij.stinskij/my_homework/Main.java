@@ -6,12 +6,12 @@ public class Main {
     private Scanner in = new Scanner(System.in);
     public static void main(String[] args) {
       Main m = new Main();
-        //m.firstTask();
-        //m.secondTask();
-        //m.thirdTask();
-        //m.fourthTask();
-        //m.fifthTask();
-        //m.sixthTask();
+        m.firstTask();
+        m.secondTask();
+        m.thirdTask();
+        m.fourthTask();
+        m.fifthTask();
+        m.sixthTask();
         m.seventhTask();
     }
 
@@ -93,4 +93,5 @@ public class Main {
         rent = days * 40 - discount;
         System.out.println("Rent: " + rent);
     }
+
 }
