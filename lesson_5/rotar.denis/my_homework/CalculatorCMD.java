@@ -1,9 +1,18 @@
+import java.util.Scanner;
+import java.io.*;
+
 public class CalculatorCMD {
 
     public static void main(String[] args) {
-        String operation = args[0];
-        double firstNum = Double.parseDouble(args[1]);
-        double secondNum = Double.parseDouble(args[2]);
+        Scanner scan = new Scanner (System.in);
+
+        System.out.println("Enter operation:(сложение, вычитание, умножение, деление, нахождение модуля, остаток от деления");
+        String operation = scan.nextLine();
+        System.out.println("Enter first number:");
+        double firstNum = scan.nextDouble();
+        System.out.println("Enter second number:");
+        double secondNum = scan.nextDouble();
+
         calculate(operation, firstNum, secondNum);
     }
 
