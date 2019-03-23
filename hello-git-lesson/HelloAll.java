@@ -19,6 +19,7 @@ public class HelloAll {
   	printUserInfo("Vladislav","Berdnikov");
       printUserInfo("Anna","Tsurkan");
         printUserInfo("Denis","Palamarchuk");
+	printUserInfo("Aleksey", "Andreev");
 
       public static void main (String[] args){
           System.out.println("Hello all!!!);
