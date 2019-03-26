@@ -7,4 +7,6 @@ public interface LinkedListInterface {
     String iSearch(Integer index);
     Integer vSearch(String string);
     Integer getSize();
+    String getLast();
+    void showList();
 }

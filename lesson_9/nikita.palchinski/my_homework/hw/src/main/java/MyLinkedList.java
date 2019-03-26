@@ -1,4 +1,4 @@
-public class LinkedList implements LinkedListInterface{
+public class MyLinkedList implements LinkedListInterface {
 
     private String string;
     private Integer size;
@@ -11,15 +11,15 @@ public class LinkedList implements LinkedListInterface{
         this.string = string;
         size = strings.length;
         String[] temps = new String[size];
-        for(int o = 0; o < size; o++){
+        for (int o = 0; o < size; o++) {
             temps[o] = strings[o];
         }
         size++;
-        String[] strings = new String[size];
-        for(int i = 0; i < size - 1; i++){
+         this.strings = new String[size];
+        for (int i = 0; i < size - 1; i++) {
             strings[i] = temps[i];
         }
-        strings[size] = string;
+        strings[size - 1] = string;
     }
 
     public void add(Integer index, String string) {
@@ -28,19 +28,19 @@ public class LinkedList implements LinkedListInterface{
         size = strings.length;
         String[] tempsPrev = new String[index];
         String[] tempsNext = new String[size - index];
-        for(int o = 0; o < index; o++){
+        for (int o = 0; o < index; o++) {
             tempsPrev[o] = strings[o];
         }
-        for(int o = index; o < size; o++){
+        for (int o = index; o < size; o++) {
             tempsNext[o - index] = strings[o];
         }
         size++;
-        String[] strings = new String[size];
-        for(int i = 0; i < index; i++){
+        this.strings = new String[size];
+        for (int i = 0; i < index; i++) {
             strings[i] = tempsPrev[i];
         }
         strings[index] = string;
-        for(int i = index + 1; i < size; i++){
+        for (int i = index + 1; i < size; i++) {
             strings[i] = tempsNext[i - index - 1];
         }
     }
@@ -48,48 +48,50 @@ public class LinkedList implements LinkedListInterface{
     public void remove() {
         size = strings.length;
         String[] temps = new String[size];
-        for(int o = 0; o < size; o++){
+        for (int o = 0; o < size; o++) {
             temps[o] = strings[o];
         }
         size--;
-        String[] strings = new String[size];
-        for(int i = 0; i < size; i++){
+        this.strings = new String[size];
+        for (int i = 0; i < size; i++) {
             strings[i] = temps[i];
         }
     }
 
     public void remove(Integer index) {
         this.index = index;
-        size = strings.length;
+        size = this.strings.length;
         String[] tempsPrev = new String[index];
-        String[] tempsNext = new String[size - index];
-        for(int o = 0; o < index; o++){
+        String[] tempsNext = new String[size - index - 1];
+        for (int o = 0; o < index; o++) {
             tempsPrev[o] = strings[o];
         }
-        for(int o = 0; o < size - index; o++){
-            tempsNext[o] = strings[o + index];
+        for (int o = 0; o < size - index - 1; o++) {
+            tempsNext[o] = strings[o + index + 1];
         }
         size--;
-        String[] strings = new String[size];
-        for(int i = 0; i < index; i++){
+        this.strings = new String[size];
+        for (int i = 0; i < index; i++) {
             strings[i] = tempsPrev[i];
         }
-        for(int i = index; i < size; i++){
+        for (int i = index; i < size; i++) {
             strings[i] = tempsNext[i - index];
         }
     }
 
     public String transform() {
-        return strings[size];
+        return this.strings[size];
     }
 
     public String iSearch(Integer index) {
-        return strings[index];
+        if(index < this.size)
+            return this.strings[index];
+        return null;
     }
 
     public Integer vSearch(String string) {
-        for(int i = 0; i < size; i++)
-            if(strings[i].equals(string))
+        for (int i = 0; i < size; i++)
+            if (this.strings[i].equals(string))
                 return i;
         return null;
     }
@@ -97,4 +99,19 @@ public class LinkedList implements LinkedListInterface{
     public Integer getSize() {
         return this.size;
     }
+
+    public String getLast() {
+        return this.strings[this.size - 1];
+    }
+
+    public void showList() {
+        System.out.print(this.strings[0]);
+        for(int i = 1; i < this.size; i++)
+        {
+            System.out.print(", " + this.strings[i]);
+        }
+        System.out.println();
+    }
+
+
 }
