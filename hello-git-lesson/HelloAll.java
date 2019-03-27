@@ -39,6 +39,20 @@ public class HelloAll {
           printUserInfo("Denis","Palamarchuk");
           printUserInfo("Aleksey", "Andreev");
       }
+	printUserInfo("Irina", "Shvec");
+	printUserInfo("Rotar", "Denis");
+	printUserInfo("Maxim", "Voroniuk");
+	printUserInfo("Kirill" ,"Klyenko");
+        printUserInfo("Nikita", "Palchinski");
+  	printUserInfo("Vitalij", "Stinskij");
+        printUserInfo("Iliya ","Chernomorets");
+  	printUserInfo("Vladislav","Berdnikov");
+        printUserInfo("Anna","Tsurkan");
+        printUserInfo("Denis","Palamarchuk");
+	printUserInfo("Aleksey", "Andreev");
+	printUserInfo("Ilya", "Igonin");
+	printUserInfo("Ivan", "Brus");
+      }	
                            
       private static void printUserInfo(String firstName, String lastName) {
           System.out.format("Hello %s %s, Welcome to Hillel school !!!\n", firstName, lastName);

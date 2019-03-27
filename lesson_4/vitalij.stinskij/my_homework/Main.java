@@ -6,6 +6,7 @@ public class Main {
     private Scanner in = new Scanner(System.in);
     public static void main(String[] args) {
       Main m = new Main();
+
         m.firstTask();
         m.secondTask();
         m.thirdTask();
@@ -93,4 +94,5 @@ public class Main {
         rent = days * 40 - discount;
         System.out.println("Rent: " + rent);
     }
+
 }
