@@ -4,8 +4,6 @@ public class MyLinkedList implements LinkedListInterface {
     private Integer size;
     private String[] strings = new String[0];
     private Integer index;
-    private Integer indexPrev;
-    private Integer indexNext;
 
     public void add(String string) {
         this.string = string;
@@ -15,7 +13,7 @@ public class MyLinkedList implements LinkedListInterface {
             temps[o] = strings[o];
         }
         size++;
-         this.strings = new String[size];
+        this.strings = new String[size];
         for (int i = 0; i < size - 1; i++) {
             strings[i] = temps[i];
         }
@@ -79,8 +77,10 @@ public class MyLinkedList implements LinkedListInterface {
         }
     }
 
-    public String transform() {
-        return this.strings[size];
+    public String[] transform() {
+        //System.out.println();
+        //System.out.println("List has been transformed" + " to array with " + this.size + " size");
+        return this.strings;
     }
 
     public String iSearch(Integer index) {
@@ -105,11 +105,12 @@ public class MyLinkedList implements LinkedListInterface {
     }
 
     public void showList() {
-        System.out.print(this.strings[0]);
-        for(int i = 1; i < this.size; i++)
+        //System.out.print(this.strings[0]);
+        for(int i = 0; i < this.size - 1; i++)
         {
-            System.out.print(", " + this.strings[i]);
+            System.out.println(this.strings[i] + ", ");
         }
+        System.out.println(this.strings[this.size - 1]);
         System.out.println();
     }
 

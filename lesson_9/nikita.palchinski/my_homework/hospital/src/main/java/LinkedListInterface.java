@@ -3,7 +3,7 @@ public interface LinkedListInterface {
     void add(Integer index, String string);
     void remove();
     void remove(Integer index);
-    String transform();
+    String[] transform();
     String iSearch(Integer index);
     Integer vSearch(String string);
     Integer getSize();
