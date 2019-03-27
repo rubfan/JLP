@@ -14,7 +14,7 @@ public class Main {
         human2.comeToHospital();
         human2.setConcession(12);
         System.out.println(hospital.getCountOfFreeHRooms());
-        human.setIllness("AIDS");
+        human.setIllness("bronchitis");
         human.setIllness("get cold");
         hospital.getCureList();
         hospital.getCureList();
