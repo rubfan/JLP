@@ -6,23 +6,24 @@ public class HomeWork5 {
         HomeWork5 m = new HomeWork5();
         m.calc();
         m.tip();
-
     }
 
     private void calc(){
         System.out.print("Select operation \n 1.addition \n 2.subtraction " +
                 "\n 3.multiplication \n 4.division \n ");
+        
         int operation = in.nextInt();
         System.out.print("Input first num: ");
+        
         int a = in.nextInt();
         System.out.print("Input second num: ");
+        
         int b = in.nextInt();
         switch (operation)
         {
             case 1:
                 System.out.println("Answer: " + (a + b));
                 break;
-
             case 2:
                 System.out.print("Answer: " + (a - b));
                 break;
@@ -36,7 +37,6 @@ public class HomeWork5 {
 
              default:
                 System.out.println("Invalid choose of operation");
-
         }
     }
 
@@ -78,4 +78,3 @@ public class HomeWork5 {
     }
 
 }
-
