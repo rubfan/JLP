@@ -4,14 +4,12 @@ import java.util.Scanner;
 public class HomeWorkL4 {
 
     Scanner in = new Scanner(System.in);
-
     int a = in.nextInt();
     int b = in.nextInt();
     int c = in.nextInt();
 
 
     public static void main(String[] args) {
-        
         HomeWorkL4 hw = new HomeWorkL4();
         hw.ex1();
         hw.ex2();
@@ -24,14 +22,12 @@ public class HomeWorkL4 {
 
 
     private void ex1() {
-
         int min = Math.min(Math.min(a, b), c);
         System.out.println("Min num: " + min);
     }
 
 
     private void ex2() {
-
         int min = Math.min(Math.min(a, b), c);
         System.out.println("Min num: " + min);
         int max = Math.max(Math.max(a, b), c);
@@ -84,7 +80,6 @@ public class HomeWorkL4 {
         else if (Math.abs(a - 10) > Math.abs(b - 10)) {
             System.out.println(b + " ближе к 10 чем " + a);
         }
-
         else if (Math.abs(a - 10) == Math.abs(b - 10)) {
             System.out.println(a + " и " + b + " на одинаковом расстоянии от 10-ти");
         }
