@@ -26,4 +26,3 @@ public class Lesson5 {
         return tips;
     }
 }
-
