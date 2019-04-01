@@ -82,7 +82,6 @@ public class HomeWorkL4 {
         }
         else if (Math.abs(a - 10) == Math.abs(b - 10)) {
             System.out.println(a + " и " + b + " на одинаковом расстоянии от 10-ти");
-
         }
     }
 
@@ -96,7 +95,6 @@ public class HomeWorkL4 {
             rentPrice = days * 40;
             System.out.println("Rent price: " + rentPrice);
         }
-
         else if(days > 5 && days <=7) {
             rentPrice = days * 40 - 20;
             System.out.println("Rent price: " + rentPrice);
