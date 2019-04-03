@@ -1,7 +1,3 @@
-    //2) Придумайте еще 2 каких-нибудь объекта из реальной жизни и реализуйте это с помощью класса.
-    // Два:
-    // Микроволновка
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
