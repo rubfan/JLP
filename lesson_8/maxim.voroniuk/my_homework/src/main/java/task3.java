@@ -3,13 +3,10 @@ public class task3 {
 //    (задание будет подробно рассмотренно в классе - но предварительно
 //    попробуйте погуглить и разобраться в теме):
 
-
     public static void main(String[] args) {
         int k = 0;
         int n = 10;
-        int it, jt, zt;
-        it = jt = zt = 0;
-
+        
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 for (int z = j + 1; z < n; z++) {
