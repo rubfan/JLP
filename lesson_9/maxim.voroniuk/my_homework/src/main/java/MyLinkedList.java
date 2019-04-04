@@ -69,8 +69,8 @@ public class MyLinkedList {
             Node current = find(pos);
             current.getPrev().setNext(current.getNext());
             current.getNext().setPrev(current.getPrev());
-            current.setPrev(null);
-            current.setNext(null);
+            current.setPrev(null); //По идее этого можно было и не делать, ведь в MyLinkedList уже нет
+            current.setNext(null); // ссылок на эту ноду. 
             size--;
         }
     }
