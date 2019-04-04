@@ -43,14 +43,14 @@ public class MyLinkedList {
         }
     }
 
-    //Удалить полследний элемент
+    //Удалить первый элемент
     public void removeFirst(){
         first = first.getNext();
         first.setPrev(null);
         size--;
     }
 
-    //Удалить первый элемент
+    //Удалить последний элемент
     public void removeLast(){
         last = last.getPrev();
         last.setNext(null);
