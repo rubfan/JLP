@@ -1,4 +1,5 @@
 import org.hamcrest.Matcher;
+import org.hamcrest.Matchers;
 import org.hamcrest.core.AllOf;
 import org.hamcrest.core.AnyOf;
 import org.hamcrest.core.Is;
@@ -10,6 +11,8 @@ import org.junit.Test;
 import org.hamcrest.CoreMatchers.*;
 import java.lang.String;
 import org.hamcrest.CoreMatchers;
+import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.greaterThan;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.core.Is.is;
@@ -60,7 +63,7 @@ public class LanternTest {
     public void getBatteriesTest() {
         lantern.setPower(11);
         lantern.setNumofBat(2);
-        //Assert.assertThat(lantern.getPower(), greaterThan(lantern.getNumofBat()));
+        Assert.assertThat(lantern.getPower(), Matchers.greaterThan(lantern.getNumofBat()));
 
     }
 
@@ -68,4 +71,4 @@ public class LanternTest {
     public void lightOut() {
         lantern.setState(State.OFF);
     }
-} 
+}
