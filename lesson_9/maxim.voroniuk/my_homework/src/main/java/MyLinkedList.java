@@ -30,6 +30,19 @@ public class MyLinkedList {
         }
     }
 
+    //Добавить в начало
+    private void addFirst(Object val){
+        if(first == null){
+            add(val);
+        }
+        else {
+            Node newNode = new Node(null, val, first);
+            this.first.setPrev(newNode);
+            this.first = newNode;
+            size++;
+        }
+    }
+
     //Удалить полследний элемент
     public void removeFirst(){
         first = first.getNext();
@@ -58,6 +71,7 @@ public class MyLinkedList {
             current.getNext().setPrev(current.getPrev());
             current.setPrev(null);
             current.setNext(null);
+            size--;
         }
     }
 
@@ -68,15 +82,24 @@ public class MyLinkedList {
 
     //Вставить элемент после указанной позиции
     public void insert(Object val, int pos){
-        Node current = find(pos);
-        Node newN = new Node(current.getPrev(), val, current);
-        current.getPrev().setNext(newN);
-        current.setPrev(newN);
+        if (pos == 0){
+            addFirst(val);
+        }
+        else if (pos == getSize()){
+            add(val);
+        }
+        else {
+            Node current = find(pos);
+            Node newN = new Node(current.getPrev(), val, current);
+            current.getPrev().setNext(newN);
+            current.setPrev(newN);
+            size++;
+        }
     }
 
     //Преобразовать в массив
     public Object[] toArray(){
-        Object[] obj = new Object[size+1];
+        Object[] obj = new Object[size];
         if(first != null){
             Node current = first;
             int i = 0;
