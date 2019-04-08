@@ -1,5 +1,5 @@
 
-public class task6 {
+public class Task6 {
 
 //    6) Найти минимальный и максимальный элемент массива
 
