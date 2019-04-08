@@ -1,4 +1,4 @@
-public class task3 {
+public class Task3 {
     public static void main(String[] args) {
 //        3) Создайте программу, выводящую на экран все неотрицательные элементы
 //        последовательности 90 85 80 75 70 65 60 ….
