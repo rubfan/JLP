@@ -1,4 +1,4 @@
-public class task2 {
+public class Task2 {
     public static void main(String[] args) {
 //        2) Создайте программу, выводящую на экран первые 55 элементов последовательности 1 3 5 7 9 11 13 15 17 ….
         int num=1;
