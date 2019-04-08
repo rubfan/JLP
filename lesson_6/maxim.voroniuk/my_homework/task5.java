@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class task5 {
+public class Task5 {
 //    5) Найти сумму первых n элементов массива
     public static void main(String[] args) {
         Random rand = new Random();
