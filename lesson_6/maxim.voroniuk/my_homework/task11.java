@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class task11 {
+public class Task11 {
 
     //11) Write a program to repeatedly add all the digits until the result has only
     // one digit of a given non-negative number:
