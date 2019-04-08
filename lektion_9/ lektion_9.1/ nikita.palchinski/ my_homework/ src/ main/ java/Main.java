@@ -31,8 +31,8 @@ public class Main {
         human.setConcession(11);
         human2.setConcession(2);
 
-        human2.setIllness("Shit");
-        human2.setIllness("Bitch");
+        human2 . setIllness ( "skdkdk");
+        human2 . setIllness ( "BkBkkk" );
 
         human.setConcession(22);
         human2.setConcession(4);
