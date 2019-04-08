@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class task9 {
+public class Task9 {
 
     //9) Перевести число в двоичную систему счисления
 
