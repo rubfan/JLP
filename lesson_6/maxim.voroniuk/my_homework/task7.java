@@ -1,5 +1,5 @@
 
-public class task7 {
+public class Task7 {
     public static void main(String[] args) {
 
         //7) Найти сумму всех четных и сумму всех нечетных элементов массива
