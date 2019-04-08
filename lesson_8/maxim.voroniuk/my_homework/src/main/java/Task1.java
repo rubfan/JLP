@@ -1,15 +1,15 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class task1 {
+public class Task1 {
 //    Сделайте сортировку выборкой, когда нужно найти минимальный элемент
 //    и посчитайте сколько на нее отводится операций(времени) попробуйте
 //    увеличить количество элементов в массиве и оценить на сколько увеличится время
 
     public static void main(String[] args) {
 
-        int[] arr1 = RandomArray(10);
-        int[] arr2 = RandomArray(50);
+        int[] arr1 = randomArray(10);
+        int[] arr2 = randomArray(50);
         int op1, op2;
         long timeTemp;
         long delta1, delta2;
@@ -55,7 +55,7 @@ public class task1 {
     }
 
     // Генератор массива случайных элементов
-    private static int [] RandomArray(int size){
+    private static int [] randomArray(int size){
         Random rand = new Random();
         int[] arr = new int[size];
         for(int i = 0; i < size; i++){

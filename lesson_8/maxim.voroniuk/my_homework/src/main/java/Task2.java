@@ -1,4 +1,4 @@
-public class task2 {
+public class Task2 {
     //2) Есть 2 массива упорядоченных по возрастанию. Получите 3й массив,
     // который объединит все эти элементы, но также в возрастающем порядке.
     // Пример ввода:
@@ -13,8 +13,8 @@ public class task2 {
         int[] arr2 = {4, 5, 6, 7, 8, 9, 99};
         int[] result = new int[arr1.length + arr2.length];
 
-        PrintArray(arr1);
-        PrintArray(arr2);
+        printArray(arr1);
+        printArray(arr2);
 
         int t1 = 0;
         int t2 = 0;
@@ -36,11 +36,11 @@ public class task2 {
             }
         }
 
-        PrintArray(result);
+        printArray(result);
     }
 
     // Вывод массива
-    private static void PrintArray(int[] arr){
+    private static void printArray(int[] arr){
         for(int i = 0; i < arr.length; i++){
             System.out.print(arr[i] + "\t");
         }

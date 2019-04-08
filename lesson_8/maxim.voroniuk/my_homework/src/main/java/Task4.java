@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class task4 {
+public class Task4 {
     //4) Есть массив с числами упорядоченными по возрастанию,
     // нужно определить есть ли в этом массиве 2 числа, сумма которых равна "sum".
     // Пример ввода:
@@ -14,13 +14,29 @@ public class task4 {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        int[] arr = RandomArray(10);
+        int[] arr = randomArray(10);
         int sum = rand.nextInt(100);
-        int diff;
-        boolean result = false;
 
         System.out.println(Arrays.toString(arr));
         System.out.println("Sum: " + sum);
+
+        System.out.println("Result: " + twoNumSum(arr, sum));
+    }
+
+    // Генератор массива случайных элементов
+    private static int [] randomArray(int size){
+        Random rand = new Random();
+        int[] arr = new int[size];
+        for(int i = 0; i < size; i++){
+            arr[i] = rand.nextInt(50);
+        }
+        return arr;
+    }
+
+    private static boolean twoNumSum(int[] arr, int sum){
+
+        int diff;
+        boolean result = false;
 
         for (int i = 0; i < arr.length; i++){
             diff = sum - arr[i];
@@ -34,20 +50,9 @@ public class task4 {
                 }
             }
             if(result){
-                break;
+                return result;
             }
         }
-
-        System.out.println("Result: " + result);
-    }
-
-    // Генератор массива случайных элементов
-    private static int [] RandomArray(int size){
-        Random rand = new Random();
-        int[] arr = new int[size];
-        for(int i = 0; i < size; i++){
-            arr[i] = rand.nextInt(50);
-        }
-        return arr;
+        return result;
     }
 }
