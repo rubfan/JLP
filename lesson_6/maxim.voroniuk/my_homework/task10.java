@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class task10 {
+public class Task10 {
 
     //10) Вывести первые 5 минимальных элементов массива
     public static void main(String[] args) {
