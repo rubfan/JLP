@@ -4,21 +4,21 @@ public class HomeWorkL6 {
 
     public static void main(String[] args) {
         HomeWorkL6 hw = new HomeWorkL6();
-        hw.ex1();
-        hw.ex2();
-        hw.ex3();
-        hw.ex4();
-        hw.ex5();
-        hw.ex6();
-        hw.ex7();
-        hw.ex8();
-        hw.ex9();
-        hw.ex10();
-        hw.ex11();
+        hw.ex_1();
+        hw.ex_2();
+        hw.ex_3();
+        hw.ex_4();
+        hw.ex_5();
+        hw.ex_6();
+        hw.ex_7();
+        hw.ex_8();
+        hw.ex_9();
+        hw.ex_10();
+        hw.ex_11();
     }
 
 
-    private void ex1() {
+    private void ex_1() {
 
         for (int i = 1000; i < 10000; i += 3) {
             System.out.println(i);
@@ -26,7 +26,7 @@ public class HomeWorkL6 {
     }
 
 
-    private void ex2() {
+    private void ex_2() {
 
         for (int i = 1, j = 1; i < 55; i++, j = j + 2) {
             System.out.println(j);
@@ -34,7 +34,7 @@ public class HomeWorkL6 {
     }
 
 
-    private void ex3() {
+    private void ex_3() {
 
         for (int i = 90; i > 0; i -= 5) {
             System.out.println(i);
@@ -42,14 +42,14 @@ public class HomeWorkL6 {
     }
 
 
-    private void ex4() {
+    private void ex_4() {
         for (int i = 1, j = 2; i <= 20; i++, j = j * 2) {
             System.out.println(j);
         }
     }
 
 
-    private void ex5() {
+    private void ex_5() {
         int[] a = {33, 13, 7, 23, 55};
         int sum = 0;
         for (int i = 0; i < 3; i++) {
@@ -59,7 +59,7 @@ public class HomeWorkL6 {
     }
 
 
-    private void ex6() {
+    private void ex_6() {
         int[] a = new int[]{44, 35, 13, 776, 50};
         int min = a[0];
         int max = a[0];
@@ -79,7 +79,7 @@ public class HomeWorkL6 {
     }
 
 
-    private void ex7() {
+    private void ex_7() {
         int[] a = {22, 35, 56, 13};
         int sum = 0;
         int sum2 = 0;
@@ -94,7 +94,7 @@ public class HomeWorkL6 {
     }
 
 
-    private void ex8(){
+    private void ex_8(){
 
         for(int i = 100000; i < 1000000; i++){
             int num1 = i/100000;
@@ -111,14 +111,14 @@ public class HomeWorkL6 {
     }
 
 
-    private void ex9() {
+    private void ex_9() {
         int num = 144;
         String convert = Integer.toBinaryString(num);
         System.out.println(convert);
 
     }
 
-    private void ex10() {
+    private void ex_10() {
         int[] a = new int[]{44, 35, 13, 37, 776, 50};
         int min = a[0];
 
@@ -145,7 +145,7 @@ public class HomeWorkL6 {
         System.out.println("Min: " + min + ", " + min2 + ", " + min3);
 
     }
-    private void ex11(){
+    private void ex_11(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Input num: ");
         int a = sc.nextInt();
