@@ -9,30 +9,25 @@ public class Marge {
         int[] ab = new int[a.length + b.length];
         int i = 0, j = 0, k = 0;
 
-        while (i < a.length && j < b.length)
-        {
-            if (a[i] < b[j])
-            {
+        while (i < a.length && j < b.length){        
+            if (a[i] < b[j]){            
                 ab[k] = a[i];
                 i++;
             }
-            else
-            {
+            else{
                 ab[k] = b[j];
                 j++;
             }
             k++;
         }
 
-        while (i < a.length)
-        {
+        while (i < a.length){
             ab[k] = a[i];
             i++;
             k++;
         }
 
-        while (j < b.length)
-        {
+        while (j < b.length){
             ab[k] = b[j];
             j++;
             k++;
