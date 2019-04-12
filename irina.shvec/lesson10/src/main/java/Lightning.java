@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+public enum Lightning {
+    RED,
+    WHITE,
+    BLINK;
 
-public class Lightning {
+    private Lightning() {
+    }
 }
