@@ -17,7 +17,7 @@ public class HomeWork5 {
         int a = in.nextInt();
         System.out.print("Input second num: ");
         int b = in.nextInt();
-        switch (operation) 
+        switch (operation)
         {
             case 1:
                 System.out.println("Answer: " + (a + b));
@@ -33,6 +33,7 @@ public class HomeWork5 {
             case 4:
                 System.out.println("Answer: " + (a / b));
                 break;
+
              default:
                 System.out.println("Invalid choose of operation");
 
