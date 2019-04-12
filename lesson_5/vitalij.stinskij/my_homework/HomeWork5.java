@@ -6,9 +6,10 @@ public class HomeWork5 {
         HomeWork5 m = new HomeWork5();
         m.calc();
         m.tip();
+
     }
 
-    private void calc() {
+    private void calc(){
         System.out.print("Select operation \n 1.addition \n 2.subtraction " +
                 "\n 3.multiplication \n 4.division \n ");
 
@@ -18,21 +19,26 @@ public class HomeWork5 {
         System.out.print("Input second num: ");
 
         int b = in.nextInt();
-        switch (operation) {
+        switch (operation)
+{
             case 1:
                 System.out.println("Answer: " + (a + b));
                 break;
+
             case 2:
                 System.out.print("Answer: " + (a - b));
                 break;
             case 3:
                 System.out.println("Answer: " + (a * b));
                 break;
+
             case 4:
                 System.out.println("Answer: " + (a / b));
                 break;
+
              default:
                 System.out.println("Invalid choose of operation");
+
         }
     }
 
@@ -48,15 +54,19 @@ public class HomeWork5 {
             case 1:
                 System.out.println("tip: " + 0);
                 break;
+
             case 2:
                 System.out.println("tip: " + (percent(sum,5)));
                 break;
+
             case 3:
                 System.out.println("tip: " + (percent(sum,10)));
                 break;
+
             case 4:
                 System.out.println("tip: " + (percent(sum,15)));
                 break;
+
             case 5:
                 System.out.println("tip: " + (percent(sum,20)));
                 break;
@@ -65,8 +75,10 @@ public class HomeWork5 {
         }
     }
 
-    private int percent(int sum, int per) {
+    private int percent(int sum, int per){
           sum = sum*per/100;
         return sum;
     }
+
 }
+
