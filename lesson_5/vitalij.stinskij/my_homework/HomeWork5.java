@@ -12,12 +12,10 @@ public class HomeWork5 {
     private void calc(){
         System.out.print("Select operation \n 1.addition \n 2.subtraction " +
                 "\n 3.multiplication \n 4.division \n ");
-
         int operation = in.nextInt();
         System.out.print("Input first num: ");
         int a = in.nextInt();
         System.out.print("Input second num: ");
-
         int b = in.nextInt();
         switch (operation)
         {
