@@ -20,7 +20,6 @@ public class Palindrome {
             }
         }
         System.out.printf("There are %d palindromes in the text", countPalindrome);
-
     }
 
     public static boolean isPalindrome(String s) {

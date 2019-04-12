@@ -12,7 +12,6 @@ public class Email {
         Scanner scanner = new Scanner(System.in);
         String email = scanner.nextLine();
         changeSymbol(email);
-
     }
 
     public static void changeSymbol(String email) {
@@ -24,10 +23,4 @@ public class Email {
         }
         System.out.println(email);
     }
-
-    /*public static void show(String a) {
-        for (String i : a) {
-            System.out.print(i);
-        }
-    }*/
 }
