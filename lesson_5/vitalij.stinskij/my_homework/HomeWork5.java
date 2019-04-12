@@ -20,7 +20,7 @@ public class HomeWork5 {
 
         int b = in.nextInt();
         switch (operation)
-{
+        {
             case 1:
                 System.out.println("Answer: " + (a + b));
                 break;
@@ -43,7 +43,6 @@ public class HomeWork5 {
     }
 
    private void tip() {
-     
        System.out.print("Input sum: ");
        int sum = in.nextInt();
         System.out.print("Select level of service: \n 1.terrible " +
