@@ -1,6 +1,9 @@
 public class HelloAll {
+
      public static void main (String[] args){
         System.out.println("Hello all!!!);
+
+ Add fisrt and second name
 	//================================
 	printUserInfo("Vladyslav", "Kasyanchuk");
 	printUserInfo("Ruslan", "Gramatic");
@@ -16,6 +19,7 @@ public class HelloAll {
         printUserInfo("Iliya ","Chernomorets");
   	printUserInfo("Vladislav","Berdnikov");
         printUserInfo("Denis","Palamarchuk");
+    }
 
      }
     private static void printUserInfo(String firstName, String lastName) {
