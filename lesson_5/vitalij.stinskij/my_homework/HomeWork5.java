@@ -36,8 +36,8 @@ public class HomeWork5 {
 
              default:
                 System.out.println("Invalid choose of operation");
-        
-       }
+
+        }
     }
 
    private void tip() {
