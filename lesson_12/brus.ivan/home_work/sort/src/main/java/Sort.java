@@ -2,15 +2,6 @@ import java.util.Arrays;
 
 public class Sort {
 
-    public static void main(String[] args) {
-        int[] arr = {1,3,4,7,0,6,2,7,3,1,9,4};
-        Sort s = new Sort();
-        int i = s.quickSort(arr, 0, arr.length-1);
-        System.out.println(Arrays.toString(arr));
-        int a = s.binarySearch(arr, i, 0, arr.length-1);
-        System.out.println(a);
-    }
-
     public int quickSort(int[] arr, int start, int end) {
 
         int middle = start + (end - start) / 2;
