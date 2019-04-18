@@ -17,6 +17,7 @@ public class Gmail {
         gmail = gmail.replace(".", "[dot]");
         return gmail;
     }
+    
     public static void main(String args[])
     {
         String gmail = "";
