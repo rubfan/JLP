@@ -9,6 +9,7 @@ public class MyDoubleLinkedList implements  MyDoubleList{
     }
     Node tail, head;
     int size;
+    
     public void addl(Object data) {
         Node tmp = new Node(data);
         if (tail == null)
@@ -25,6 +26,7 @@ public class MyDoubleLinkedList implements  MyDoubleList{
             size++;
         }
     }
+    
     public void addf(Object data) {
         Node tmp = new Node(data);
         if (head == null) {
@@ -40,6 +42,7 @@ public class MyDoubleLinkedList implements  MyDoubleList{
             size++;
         }
     }
+    
     public void deletef(){
         if(head != null)
         {
@@ -49,6 +52,7 @@ public class MyDoubleLinkedList implements  MyDoubleList{
             size--;
         }
     }
+    
     public void deletel(){
         if(tail != null){
             Node tmp = tail;
@@ -57,6 +61,7 @@ public class MyDoubleLinkedList implements  MyDoubleList{
             size--;
         }
     }
+    
     public void delete(int index){
         if(index == 0)
         {
@@ -77,6 +82,7 @@ public class MyDoubleLinkedList implements  MyDoubleList{
             size--;
         }
     }
+    
     public void add(int index, Object data){
         Node tmp = new Node(data);
         if(index == 0){
@@ -99,6 +105,7 @@ public class MyDoubleLinkedList implements  MyDoubleList{
     public int getSize(){
         return size;
     }
+    
     public String showList(){
         if(head == null){
             return null;
