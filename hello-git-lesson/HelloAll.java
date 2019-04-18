@@ -28,3 +28,4 @@ public class HelloAll {
           System.out.format("Hello %s %s, Welcome to Hillel school !!!\n", firstName, lastName);
       }
 }
+
