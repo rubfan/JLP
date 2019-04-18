@@ -104,7 +104,6 @@ public class MyDoubleLinkedList implements  MyDoubleList{
             return null;
         }
         Node tmp = head;
-        //System.out.println("gg");
         String tmpString = tmp.data.toString();
         while (tmp != tail)
         {
@@ -140,15 +139,4 @@ public class MyDoubleLinkedList implements  MyDoubleList{
         }
         return array;
     }
-
-    /*public Object[] transform() {
-        int zise = this.size;
-        Object[] array = new Object[zise];
-        for(int i = 0; i < zise; i++)
-        {
-            array[i] = getFirst();
-            deletef();
-        }
-        return array;
-    }*/
 }
