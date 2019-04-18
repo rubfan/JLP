@@ -94,4 +94,6 @@ public class Main {
         rent = days * 40 - discount;
         System.out.println("Rent: " + rent);
     }
+
 }
+
