@@ -21,6 +21,7 @@ public class HelloAll {
           printUserInfo("Aleksey", "Andreev");
           printUserInfo("Ivan", "Brus");
       }
+
                            
       private static void printUserInfo(String firstName, String lastName) {
           System.out.format("Hello %s %s, Welcome to Hillel school !!!\n", firstName, lastName);
