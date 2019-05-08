@@ -84,7 +84,6 @@ public class Methods {
     }
 
     void toBinary(int a){
-//        System.out.println(Integer.toString(a, 2));
         System.out.println(Integer.toBinaryString(a));
     }
 
