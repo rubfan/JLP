@@ -57,22 +57,3 @@ public class Arrays {
 }
 
 
-//    public int[] addValue(int value) {
-//        for (int i = 0; i < firstArray.length; i++) {
-//            if (firstArray[i] == 0) {
-//                firstArray[i] = value;
-//                break;
-//            } else {
-//                int[] newArray = new int[firstArray.length * 2];
-//                for (int j = 0; j < firstArray.length; i++) {
-//                    if (firstArray[j] == 0) {
-//                        firstArray[j] = value;
-//                        break;
-//                    }
-//                }
-//
-//            }
-//        }
-//
-//    }
-
