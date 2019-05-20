@@ -1,13 +1,12 @@
 public class HomeWorkL7 {
     public static void main(String[] args) {
         HomeWorkL7 hw = new HomeWorkL7();
-//        hw.ex_1();
-        hw.ex_2();
+        hw.ex1();
+        hw.ex2();
     }
 
 
     private void ex_1(){
-
         int bound = 8;
         int[][] a = new int[bound+1][bound+1];
         for (int n = 0; n <= bound; n++) {
