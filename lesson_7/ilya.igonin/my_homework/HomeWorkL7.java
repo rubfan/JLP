@@ -6,8 +6,7 @@ public class HomeWorkL7 {
     }
 
 
-    private void ex1(){
-
+    private void ex_1(){
         int bound = 8;
         int[][] a = new int[bound+1][bound+1];
         for (int n = 0; n <= bound; n++) {
@@ -25,7 +24,7 @@ public class HomeWorkL7 {
         }
     }
 
-    private void ex2(){
+    private void ex_2(){
         int n = 4;
         int[][] a = new int[n][n];
 
