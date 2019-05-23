@@ -18,4 +18,14 @@ public class EmailAddress {
         }
     }
 
+    public String palindrom (String b){
+       String [] words = b.split(",");
+       for (int i = 0; i < words.length; i++){
+           words[i] = words[i].trim();
+          }
+
+
+        return null;
+    }
+
 }
