@@ -12,3 +12,4 @@ public interface MyDoubleList {
     //Object[] transform();
     String[] toArray();
 }
+

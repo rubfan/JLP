@@ -10,3 +10,4 @@ public interface LinkedListInterface {
     String getLast();
     void showList();
 }
+

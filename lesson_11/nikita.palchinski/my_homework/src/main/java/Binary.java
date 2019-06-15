@@ -23,3 +23,4 @@ public class Binary {
         System.out.println(binary);
     }
 }
+

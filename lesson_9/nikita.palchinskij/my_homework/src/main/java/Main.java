@@ -56,48 +56,6 @@ public class Main {
         human.leaveTheHospital();
         human.leaveTheHospital();
         System.out.println(hospital.getCountOfFreeHRooms());
-
-        //System.out.println(hospital.paid());
-
-        /*hospital.getCurePrice();
-        hospital.getCureList();
-
-
-        //hospital.getCurePrice();
-        System.out.println(hospital.getCountOfFreeHRooms());
-        human2.comeToHospital();
-        human2.comeToHospital();
-        human2.setConcession(12);
-        human.setConcession(10);
-        System.out.println(hospital.getCountOfFreeHRooms());
-
-        hospital.getCureList();
-        hospital.getCureList();
-
-        human2.leaveTheHospital();
-        human2.setMoney(20);
-        System.out.println(hospital.getCountOfFreeHRooms());
-
-        human.setHealthState("little bad");
-
-        System.out.println(human.getHealthState());
-        System.out.println(hospital.paid());
-        System.out.println();
-        human2.getIllness().showList();
-        System.out.print(human2.getFName() + "'s ");
-        System.out.println(" concession is " + human2.getConcession());
-        System.out.print(human.getFName() + "'s ");
-        System.out.println(" concession is " + human.getConcession());
-        */
-
-        /*---it doesn't work
-        //hospital.getCureList("w", "cold")/*.showList()*/;
-
-        /*MyLinkedList aaa = hospital.getCureList("s");
-        aaa.add(1, "illness");
-        aaa.showList();------it works good------*/
-
-
-
     }
 }
+

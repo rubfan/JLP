@@ -22,3 +22,4 @@ public class prePreviousTest {
         assertThat(prePrevious.prePreviousElement(array, number2), not(5));
     }
 }
+

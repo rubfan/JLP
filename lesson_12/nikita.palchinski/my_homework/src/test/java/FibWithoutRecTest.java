@@ -13,3 +13,4 @@ public class FibWithoutRecTest {
         assertThat(FibWithoutRec.fib(0), is(0));
     }
 }
+

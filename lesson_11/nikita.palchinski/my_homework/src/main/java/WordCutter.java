@@ -16,3 +16,4 @@ public class WordCutter {
         System.out.println(":)");
     }
 }
+

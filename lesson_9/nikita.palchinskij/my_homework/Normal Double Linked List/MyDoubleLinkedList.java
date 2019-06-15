@@ -147,3 +147,4 @@ public class MyDoubleLinkedList implements  MyDoubleList{
         return array;
     }
 }
+

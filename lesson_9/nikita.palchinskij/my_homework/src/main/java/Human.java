@@ -15,5 +15,5 @@ public interface Human {
     Integer getMoney();
     MyLinkedList getIllness();
     int getConcession();
-    //void paid();
 }
+

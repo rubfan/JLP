@@ -35,3 +35,4 @@ public class Palindromes {
         System.out.println("There are " + count + " palindromes in the text");
     }
 }
+

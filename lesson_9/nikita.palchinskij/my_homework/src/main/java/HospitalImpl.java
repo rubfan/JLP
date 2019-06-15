@@ -42,10 +42,5 @@ public class HospitalImpl implements  Hospital{
     public MyLinkedList paid() {
         return paid;
     }
-
-    /*public MyLinkedList getCureList(String mode, String illness){
-        if(mode.equals("w")) this.cureList.remove(
-                this.cureList.vSearch(illness));
-        return this.cureList;
-    }*/
 }
+

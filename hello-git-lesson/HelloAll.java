@@ -1,8 +1,9 @@
 public class HelloAll {
 
-     public static void main (String[] args){
+     public static void main (String[] args) {
         System.out.println("Hello all!!!);
-        //================================
+        //Add fisrt and second name
+	      //================================
         printUserInfo("Vladyslav", "Kasyanchuk");
         printUserInfo("Ruslan", "Gramatic");
         printUserInfo("Irina", "Shvec");
@@ -19,6 +20,11 @@ public class HelloAll {
         printUserInfo("Vladislav","Berdnikov");
         printUserInfo("Anna","Tsurkan");
         printUserInfo("Denis","Palamarchuk");
+    }
+                           
+    private static void printUserInfo(String firstName, String lastName) {
+	System.out.format("Hello %s %s, Welcome to Hillel school !!!\n", firstName, lastName);
+    }
         printUserInfo("Aleksey", "Andreev");
         printUserInfo("Ilya", "Igonin");
         printUserInfo("Ivan", "Brus");

@@ -116,3 +116,4 @@ public class HumanImpl implements Human {
         return concession;
     }
 }
+

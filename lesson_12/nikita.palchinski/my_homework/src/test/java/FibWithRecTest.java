@@ -17,3 +17,4 @@ public class FibWithRecTest {
         assertThat(FibWithRec.fibr(9), is(FibWithoutRec.fib(9)));
     }
 }
+

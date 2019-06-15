@@ -8,3 +8,4 @@ public interface Hospital {
     MyLinkedList getCureList(String mode);
     MyLinkedList paid();
 }
+

@@ -73,8 +73,9 @@ public class prePrevious {
         Scanner input = new Scanner(System.in);
         int array[] = inputArray();
         quickSort(array, 0, array.length - 1);
-        System.out.println("Enter element you want to find the previous of: ");
+        System.out.println("Enter the element you want to find the previous of: ");
         int number = input.nextInt();
         System.out.println(prePreviousElement(array, number));
     }
 }
+
