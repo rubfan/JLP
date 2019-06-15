@@ -6,14 +6,14 @@ public class prePrevious {
         if (start < finish) {
             int separationIndex = separation(arr, start, finish);
 
-            quickSort(arr, start, separationIndex-1);
-            quickSort(arr, separationIndex+1, finish);
+            quickSort(arr, start, separationIndex - 1);
+            quickSort(arr, separationIndex + 1, finish);
         }
     }
 
     private static int separation(int arr[], int begin, int end) {
         int kernel = arr[end];
-        int i = (begin-1);
+        int i = (begin - 1);
 
         for (int j = begin; j < end; j++) {
             if (arr[j] <= kernel) {
@@ -25,11 +25,11 @@ public class prePrevious {
             }
         }
 
-        int swapTemp = arr[i+1];
-        arr[i+1] = arr[end];
+        int swapTemp = arr[i + 1];
+        arr[i + 1] = arr[end];
         arr[end] = swapTemp;
 
-        return i+1;
+        return i + 1;
     }
 
     public static int binarySearch(int[] sortedArray, int key, int right, int left) {
@@ -48,11 +48,11 @@ public class prePrevious {
         }
     }
 
-    public static int prePreviousElement(int[] array, int number){
+    public static int prePreviousElement(int[] array, int number) {
         return (array[binarySearch(array, number, 0, array.length) - 1]);
     }
 
-    public static int[] inputArray(){
+    public static int[] inputArray() {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter array length: ");
         int size = input.nextInt();
@@ -61,9 +61,9 @@ public class prePrevious {
         for (int i = 0; i < size; i++) {
             array[i] = input.nextInt();
         }
-        System.out.print ("Inserted array elements:");
+        System.out.print("Inserted array elements:");
         for (int i = 0; i < size; i++) {
-            System.out.print (" " + array[i]);
+            System.out.print(" " + array[i]);
         }
         System.out.println();
         return array;
